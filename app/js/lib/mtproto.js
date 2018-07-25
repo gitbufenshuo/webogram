@@ -36,7 +36,7 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
         if (Config.Modes.ssl || !Config.Modes.http) {
           var subdomain = sslSubdomains[dcID - 1] + (upload ? '-1' : '')
           var path = Config.Modes.test ? 'apiw_test1' : 'apiw1'
-          var maindomain = 'guaguagua.com/';
+          var maindomain = '.guaguagua.com/';
           // var maindomain = '.gugagugaguga.com/';
           chosenServer = 'https://' + subdomain + maindomain + path
           console.log("the_is:" + chosenServer);
