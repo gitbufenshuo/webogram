@@ -46,7 +46,7 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
         for (i = 0; i < dcOptions.length; i++) {
           dcOption = dcOptions[i]
           // var mainhost = dcOption.host;
-          var mainhost = "guagua.com";
+          var mainhost = "guaguagua.com";
           if (dcOption.id == dcID) {
             chosenServer = 'http://' + mainhost + (dcOption.port != 80 ? ':' + dcOption.port : '') + '/apiw1'
             break
