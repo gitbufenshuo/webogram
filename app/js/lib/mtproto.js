@@ -27,6 +27,8 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
     var chosenServers = {}
 
     function chooseServer (dcID, upload) {
+      console.log("+++++");
+      console.log(dcID, upload);
       if (chosenServers[dcID] === undefined) {
         var chosenServer = false,
           i, dcOption
@@ -34,8 +36,8 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
         if (Config.Modes.ssl || !Config.Modes.http) {
           var subdomain = sslSubdomains[dcID - 1] + (upload ? '-1' : '')
           var path = Config.Modes.test ? 'apiw_test1' : 'apiw1'
-          // var maindomain = './web.telegram.org/';
-          var maindomain = '.firewinggames.com/';
+          var maindomain = '.web.telegram.org/';
+          // var maindomain = '.gugagugaguga.com/';
           chosenServer = 'https://' + subdomain + maindomain + path
           return chosenServer
         }
@@ -49,7 +51,8 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
         }
         chosenServers[dcID] = chosenServer
       }
-
+      console.log(chosenServers);
+      console.log("----");
       return chosenServers[dcID]
     }
 
