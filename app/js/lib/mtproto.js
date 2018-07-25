@@ -54,7 +54,7 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
         }
         chosenServers[dcID] = chosenServer
       }
-      console.log(chosenServers);
+      console.log(chosenServers, chosenServers[dcID]);
       console.log("----");
       return chosenServers[dcID]
     }
