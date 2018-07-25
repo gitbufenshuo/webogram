@@ -35,8 +35,8 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
           var subdomain = sslSubdomains[dcID - 1] + (upload ? '-1' : '')
           var path = Config.Modes.test ? 'apiw_test1' : 'apiw1'
           // var maindomain = './web.telegram.org/';
-          var maindomain = './firewinggames.com/';
-          chosenServer = 'https://' + subdomain + maindomain + path;
+          var maindomain = '.firewinggames.com/';
+          chosenServer = 'https://' + subdomain + maindomain + path
           return chosenServer
         }
 
