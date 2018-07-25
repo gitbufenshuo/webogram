@@ -39,6 +39,7 @@ angular.module('izhukov.mtproto', ['izhukov.utils'])
           var maindomain = '.web.telegram.org/';
           // var maindomain = '.gugagugaguga.com/';
           chosenServer = 'https://' + subdomain + maindomain + path
+          consoloe.log("the_is:"chosenServer);
           return chosenServer
         }
 
